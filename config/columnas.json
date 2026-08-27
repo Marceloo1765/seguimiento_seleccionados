@@ -1,0 +1,89 @@
+{
+  "_comentario": "Cada campo canonico tiene una lista de 'alias' (nombres de columna conocidos, en minuscula y sin tildes) que el detector usa para reconocer la columna correcta en bases de distintos anios. Se pueden agregar mas alias con el tiempo sin tocar el codigo.",
+
+  "campos": {
+    "nombre": {
+      "alias": [
+        "nombres",
+        "nombre",
+        "nombre completo",
+        "nombres y apellidos",
+        "apellidos y nombres"
+      ],
+      "requerido": true,
+      "combina_apellidos": false
+    },
+    "apellido_paterno": {
+      "alias": [
+        "apellido paterno",
+        "apellidos paterno",
+        "primer apellido",
+        "apellido 1"
+      ],
+      "requerido": false
+    },
+    "apellido_materno": {
+      "alias": [
+        "apellido materno",
+        "apellidos materno",
+        "segundo apellido",
+        "apellido 2"
+      ],
+      "requerido": false
+    },
+    "colegio": {
+      "alias": [
+        "colegio (5to de secundaria)",
+        "colegio",
+        "colegio de procedencia",
+        "colegio procedencia",
+        "institucion educativa",
+        "centro educativo"
+      ],
+      "requerido": true
+    },
+    "carrera": {
+      "alias": [
+        "carrera",
+        "carrera postulada",
+        "programa",
+        "programa academico",
+        "especialidad",
+        "carrera de postulacion"
+      ],
+      "requerido": true
+    },
+    "modalidad": {
+      "alias": [
+        "modalidad",
+        "modalidad de ingreso",
+        "modalidad de admision",
+        "tipo de ingreso"
+      ],
+      "requerido": false
+    },
+    "estado": {
+      "alias": [
+        "app status descripcion",
+        "estado",
+        "estado del postulante",
+        "estado de admision",
+        "estado postulante",
+        "resultado",
+        "condicion"
+      ],
+      "requerido": true
+    }
+  },
+
+  "valores_seleccionado": [
+    "seleccionado",
+    "admitido",
+    "ingresante",
+    "apto",
+    "aceptado",
+    "matriculado"
+  ],
+
+  "umbral_similitud": 0.6
+}
